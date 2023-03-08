@@ -12,31 +12,43 @@ def calculo(cpf, multi, digito_final):
 cpf = input('Digite o CPF: ')
 resultado1 = calculo(cpf, 10, 9)  # passo5
 while True:
-    if resultado1 < 10:
-        if resultado1 == int(cpf[9]):
-            resultado2 = calculo(cpf, 11, 10)  # passo10
-        else:
-            print('CPF inválido 1')
-
-            break
+    if resultado1 == int(cpf[9]) or int(cpf[9]) == 0:
+        resultado2 = calculo(cpf, 11, 10)
     else:
-        if int(cpf[9]) == 0:
-            resultado2 = calculo(cpf, 11, 10)  # passo10
-        else:
-            print('CPF inválido 2')
-            break
+        print('cpf inválido')
+        break
 
-    if resultado2 < 10:
-        if resultado2 == int(cpf[10]):
-            print('CPF válido')
-            break
-        else:
-            print('CPF inválido 3')
-            break
+    if resultado2 == int(cpf[9]) or int(cpf[9]) == 0:
+        print('cpf válido')
     else:
-        if int(cpf[10]) == 0:
-            print('CPF válido')
-            break
-        else:
-            print('CPF inválido 4')
-            break
+        print('cpf inválido')
+        break
+
+    # if resultado1 < 10:
+    #     if resultado1 == int(cpf[9]):
+    #         resultado2 = calculo(cpf, 11, 10)  # passo10
+    #     else:
+    #         print('CPF inválido 1')
+
+    #         break
+    # else:
+    #     if int(cpf[9]) == 0:
+    #         resultado2 = calculo(cpf, 11, 10)  # passo10
+    #     else:
+    #         print('CPF inválido 2')
+    #         break
+
+    # if resultado2 < 10:
+    #     if resultado2 == int(cpf[10]):
+    #         print('CPF válido')
+    #         break
+    #     else:
+    #         print('CPF inválido 3')
+    #         break
+    # else:
+    #     if int(cpf[10]) == 0:
+    #         print('CPF válido')
+    #         break
+    #     else:
+    #         print('CPF inválido 4')
+    #         break
