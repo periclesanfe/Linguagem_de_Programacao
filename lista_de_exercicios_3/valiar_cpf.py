@@ -18,8 +18,9 @@ while True:
         print('cpf inválido')
         break
 
-    if resultado2 == int(cpf[9]) or int(cpf[9]) == 0:
+    if resultado2 == int(cpf[10]) or int(cpf[10]) == 0:
         print('cpf válido')
+        break
     else:
         print('cpf inválido')
         break
