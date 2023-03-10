@@ -1,4 +1,4 @@
-# Description: construir um programa que identifica quantos dias há em um mês, sabdno o mês e o ano
+# Description: construir um programa que identifica quantos dias há em um mês, sabendo o mês e o ano
 
 # Dicionário que mostra o número de dias de cada mês
 meses = {
