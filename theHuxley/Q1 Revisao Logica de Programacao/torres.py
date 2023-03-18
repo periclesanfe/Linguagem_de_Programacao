@@ -2,10 +2,9 @@
 # Entrada: A primeira linha da entrada terá um inteiro n (1 <= n <= 1000) indicando a quantidade de blocos a Entidade ganhou. Na linha seguinte, terão n inteiros h_i  (1 <= h_i <= 1000), representando o tamanho do i-ésima bloco.
 # Saida: A saída deverá conter dois inteiros t e k, representando respecitvamente o tamanho da maior torre e quantas torres ficaram no final.
 
-n = int(input())  # numero de blocos
+n = input()  # numero de blocos
 
-input = input().split()  # separa em uma lista
-inputs = [int(i) for i in input]  # transforma em inteiros
+inputs = input().split()  # separa em uma lista
 
 k = len(set(inputs))  # quantidade de torres
 t = 0
