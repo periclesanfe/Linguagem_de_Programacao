@@ -2,7 +2,7 @@ def calculo(cpf, multi, digito_final):
     soma = 0
     for i in range(0, len(cpf)):
         if i < digito_final:
-            n = int(cpf[i])*multi  # passo1/6
+            n = int(cpf[i]) * multi  # passo1/6
             soma += n  # passo2/7
             multi -= 1
     resultado = 11 - (soma % 11)  # passo3/8 e passo4/9
