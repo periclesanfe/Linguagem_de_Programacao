@@ -13,7 +13,7 @@ while True:
     if idade == 0:
         break
     elif idade < 0:
-        print("Ainda não nasceu")
+        print("Você ainda não nasceu")
     elif idade <= 11:
         print("Você é uma criança")
     elif idade <= 17:
