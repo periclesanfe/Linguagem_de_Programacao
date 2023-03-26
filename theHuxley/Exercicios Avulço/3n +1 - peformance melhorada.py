@@ -2,21 +2,21 @@ def equacao(n):
     ciclo = 1
     while n > 1:
         if n % 2 == 0:
-            n = n//2
+            n = n // 2
         else:
-            n = (n*3)+1
-        ciclo +=1
+            n = (n * 3) + 1
+        ciclo += 1
 
     return ciclo
 
 
 def maxima(par, impar):
     lista = []
-    
-    if(par < impar):
-        par,impar=impar,par
-        
-    for index in range(impar, par+1, 1):
+
+    if (par < impar):
+        par, impar = impar, par
+
+    for index in range(impar, par + 1, 1):
         lista.append(equacao(index))
     return max(lista)
 
@@ -38,8 +38,8 @@ def saida(numeros):
 
     for i, j in zip(pares, impares):
         maximo = maxima(i, j)
-        #saida += str(pares.pop(0)) + " "
-        #saida += str(impares.pop(0)) + " "
+        # saida += str(pares.pop(0)) + " "
+        # saida += str(impares.pop(0)) + " "
         saida += str(i) + " " + str(j) + " " + str(maximo) + '\n'
 
     return saida
@@ -48,7 +48,7 @@ def saida(numeros):
 lista_entrada = []
 while True:
     try:
-        entrada=input("").split()
+        entrada = input("").split()
         lista_entrada += entrada
     except:
         break
