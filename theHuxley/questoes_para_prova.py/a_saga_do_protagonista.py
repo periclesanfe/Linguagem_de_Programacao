@@ -4,18 +4,31 @@
 # saida deve ser impresso unico inteiro N, equivalente a quantidade minima de movimentos que o protagonista precisa fazer.
 
 entrada = input().split()
-A, B = int(entrada[0]), int(entrada[1])
+
+diferenca = abs(int(entrada[0]) - int(entrada[1]))
+
 contador = 0
-while A != B:
-    contador += 1
-    if A > B:
-        if (A - B) % 3 == 0:
-            B += 3
-        else:
-            B += 2
-    else:
-        if (B - A) % 3 == 0:
-            A += 3
-        else:
-            A += 2
+
+while True:
+    if (diferenca % 3 == 1 or diferenca % 3 == 2):
+        diferenca -= 2
+        contador += 1
+    elif (diferenca % 3 == 0):
+        contador += diferenca // 3
+        break
 print(contador)
+# A, B = int(entrada[0]), int(entrada[1])
+# contador = 0
+# while A != B:
+#     contador += 1
+#     if A > B:
+#         if (A - B) % 3 == 0:
+#             B += 3
+#         else:
+#             B += 2
+#     else:
+#         if (B - A) % 3 == 0:
+#             A += 3
+#         else:
+#             A += 2
+# print(contador)
