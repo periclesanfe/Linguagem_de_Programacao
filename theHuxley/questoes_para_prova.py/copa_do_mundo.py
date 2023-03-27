@@ -8,6 +8,7 @@ jogadores_final = []
 jogador1 = 0
 jogador2 = 1
 
+
 while jogador2 < 16:
     resultado = input().split()
     if resultado[0] > resultado[1]:
